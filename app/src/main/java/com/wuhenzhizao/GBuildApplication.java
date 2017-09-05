@@ -19,6 +19,7 @@ public class GBuildApplication extends Application {
     public void onCreate() {
         super.onCreate();
         application = this;
-        ApiManager.instance().init(this, new Configuration().setBaseUrl("http://gitlab.intra.gomeplus.com/api/"));
+        // 设置成gitlab提供的地址前缀
+        ApiManager.instance().init(this, new Configuration().setBaseUrl("http://localhost:80/api/"));
     }
 }

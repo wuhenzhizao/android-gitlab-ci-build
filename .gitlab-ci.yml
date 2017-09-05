@@ -36,7 +36,7 @@ mxBuildSuccessNotifyJob:
       - triggers
   tags:
     - android
-mxUnittestAndCoverageJob:
+mxUnittestJob:
   stage: test
   only:
       - triggers
