@@ -1,0 +1,46 @@
+stages:
+  - buildApk
+  - uploadApk
+  - notify
+  - test
+mxBuildJob:
+  stage: buildApk
+  script:
+    - mkdir -p app/build/outputs;
+    - if [ -n "${RELEASE_BUILD}" ];     then source gitlabci/build_release_apk_script.sh; fi;
+    - if [ -n "${DEBUG_BUILD}" ]; then source gitlabci/build_debug_apk_script.sh; fi;
+  artifacts:
+    paths:
+      - app/build/outputs/
+  only:
+    - triggers
+  tags:
+    - android
+mxUploadApkJob:
+  stage: uploadApk
+  script:
+    - if [ -n "${RELEASE_BUILD}" ];     then source gitlabci/upload_apk_release_script.sh; fi;
+    - if [ -n "${DEBUG_BUILD}" ]; then source gitlabci/upload_apk_debug_script.sh; fi;
+  when: on_success
+  only:
+    - triggers
+  tags:
+    - android
+mxBuildSuccessNotifyJob:
+  stage: notify
+  when: on_success
+  script:
+      - source gitlabci/send_email_success_script.sh;
+  when: on_success
+  only:
+      - triggers
+  tags:
+    - android
+mxUnittestAndCoverageJob:
+  stage: test
+  only:
+      - triggers
+  script:
+      - source gitlabci/android_test_script.sh;
+  tags:
+      - android

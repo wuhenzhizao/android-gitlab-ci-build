@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gitlab CI 自动构建</string>
+    <string name="about_mx">关于我们</string>
+    <string name="action_settings">关于</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="branches">
+        <item>1.5.0dev</item>
+        <item>1.4.0dev</item>
+        <item>1.3.0dev</item>
+        <item>1.2.0dev</item>
+        <item>1.1.0dev_unitTest</item>
+        <item>1.1.0dev</item>
+        <item>1.0.0dev_play</item>
+        <item>1.0.0dev</item>
+        <item>dev</item>
+        <item>master</item>
+    </string-array>
+
+    <string-array name="menu">
+        <item>调试环境</item>
+        <item>生产环境</item>
+    </string-array>
+</resources>
