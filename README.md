@@ -12,7 +12,7 @@ Gitlab CI自动构建流程，支持打包，上传，发送邮件，单元测�
 -------
 工程根目录下[.gitlab-ci.yml](.gitlab-ci.yml)  
 
-```java
+```perl
 stages:          # 创建四个流程
   - buildApk     # 编译安装包
   - uploadApk    # 上传安装包
@@ -72,7 +72,7 @@ mxUnittestJob:
 触发请求  
 1. GitLab服务端 Settings --> Triggers，获取trigger信息:token, 选择CURL方式进行trigger触发，ref为对应的分支名称  
 
-```shell
+```perl
 curl -X POST \
      -F token=TOKEN \
      -F ref=REF_NAME \
