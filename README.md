@@ -94,4 +94,4 @@ public interface BuildService {
 ```  
 
 
-<img src="screenshots/Screenshot_2017-09-05-19-04-32-263_com.wuhenzhizao.png" width = "400" />
+<img src="screenshots/Screenshot_2017-09-05-19-04-32-263_com.wuhenzhizao.png" width = "350" />
