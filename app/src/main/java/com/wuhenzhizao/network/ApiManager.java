@@ -10,7 +10,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by liujikun on 15/12/30.
+ * Created by wuhenzhizao on 15/12/30.
  */
 public class ApiManager {
     private static ApiManager instance;
