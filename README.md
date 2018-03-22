@@ -1,6 +1,8 @@
 # Gitlab-CI-Auto-Build
 Gitlab CI自动构建流程，支持打包，上传，发送邮件，单元测试
 
+[Demo下载](https://fir.im/pt32)
+
 功能
 ---
 1. 提供对多环境打包的支持；

@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://www.pgyer.com/erSQ"));
+                intent.setData(Uri.parse("https://fir.im/pt32"));
                 startActivity(intent);
             }
         });
